@@ -9,11 +9,111 @@
     transition: all 400ms;
 }
 
-html{
+html {
     font-size: 62.25%;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
     overflow-x: hidden;
 }
 
+body {
+    scrollbar-width: 30rem;
+    width: 100%;
+}
 
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    z-index: 999;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    background-color: white;
+    position: fixed;
+    height: 80px;
+}
+.myHeader  .logo i{
+    color: forestgreen;
+}
+
+.myHeader .logo{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar a {
+    color:black;
+    font-size: 2rem;
+    margin-left: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+.icons{
+    font-size: 2.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.myHeader .icons a{
+    color: forestgreen;
+}
+
+.myHeader .icons #search-btn{
+    margin-left: 1rem;
+}
+
+
+/* awiper,js section */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
