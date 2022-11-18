@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
     transition: all 400ms;
+    text-transform: capitalize;
 }
 
 html {
@@ -117,3 +118,27 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+
+section{
+    position:relative;
+     /* padding: 5rem 9%; */
+}
+
+.content{
+    position: absolute;
+    margin-left: 4rem;
+    width: 50rem;
+}
+
+.content span{
+    font-size: 4rem;
+    color: #10221b;
+}
+
+.content h3 {
+    font-size: 6rem;
+    color: #219150;
+    padding-top: .5rem;
+    text-transform: uppercase;
+  }
