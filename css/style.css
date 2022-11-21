@@ -199,8 +199,6 @@ h1 {
     border-radius: 40rem;
 }
 
-
-
 .images .img h3 {
     color: #219150;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -215,10 +213,16 @@ h1 {
     padding: 1rem 0;
     line-height: 2;
     width: 350px;
-
-    
 }
 
+.about-us{
+    background-color: rgb(219, 217, 217);
+    border: #10221b;
+}
+
+.aboutUs{
+    border: #10221b;
+}
 
 @media screen and (max-width:320px) {
     html {
