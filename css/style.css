@@ -38,11 +38,23 @@ header {
     position: fixed;
     height: 80px;
 }
-.myHeader  .logo i{
+
+
+#menu-btn {
+    display: none;
+    font-size: 2.4rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--ime-Green);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+.myHeader .logo i {
     color: forestgreen;
 }
 
-.myHeader .logo{
+.myHeader .logo {
     color: black;
     font-size: 2.5rem;
     font-weight: bolder;
@@ -50,88 +62,88 @@ header {
 }
 
 .navbar a {
-    color:black;
+    color: black;
     font-size: 2rem;
     margin-left: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
- 
-.icons{
+
+.icons {
     font-size: 2.5rem;
     color: black;
     cursor: pointer;
 }
 
-.myHeader .icons a{
+.myHeader .icons a {
     color: forestgreen;
 }
 
-.myHeader .icons #search-btn{
+.myHeader .icons #search-btn {
     margin-left: 1rem;
 }
 
 
-/* awiper,js section */
+/* swiperJs section */
 html,
 body {
-  position: relative;
-  height: 100%;
+    position: relative;
+    height: 100%;
 }
 
 body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
-section{
-    position:relative;
-     /* padding: 5rem 9%; */
+main {
+    position: relative;
+    /* padding: 5rem 9%; */
 }
 
-.content{
+.content {
     position: absolute;
     margin-left: 4rem;
     width: 50rem;
 }
 
-.content span{
+.content span {
     font-size: 4rem;
     color: #10221b;
 }
@@ -141,4 +153,92 @@ section{
     color: #219150;
     padding-top: .5rem;
     text-transform: uppercase;
-  }
+    margin: 2rem;
+}
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.2rem solid #10221b;
+    color: #10221b;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+}
+
+
+ .btn:hover {
+    background-color: #10221b;
+    color: ghostwhite;
+}
+
+/* section start here */
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 2rem;
+    gap: 3rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 6rem;
+    font-weight: bolder;
+}
+
+.images .img img {
+    width: 200px;
+    border-radius: 40rem;
+}
+
+
+
+.images .img h3 {
+    color: #219150;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+    padding-top: -.5rem;
+}
+
+.images .img p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+    width: 350px;
+
+    
+}
+
+
+@media screen and (max-width:320px) {
+    html {
+        font-size: 50%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+    }
+
+}
