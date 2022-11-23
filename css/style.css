@@ -316,7 +316,7 @@ section {
 
 .secondSlider .slide .content{
 
-  padding: 1rem 0;
+  padding: 1rem 10%;
   text-align: center;  
 }
 
@@ -337,6 +337,10 @@ color: #219150;
     color: #10221b;
 }
 
+
+
+
+/* popular packages section */
 
 @media screen and (max-width:320px) {
     html {
