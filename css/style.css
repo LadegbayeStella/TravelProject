@@ -16,7 +16,7 @@ html {
     scroll-padding-top: 7rem;
     overflow-x: hidden;
 }
-   
+
 
 header {
     display: flex;
@@ -72,6 +72,7 @@ header {
 
 .myHeader .icons a {
     color: forestgreen;
+    text-decoration: none;
 }
 
 .myHeader .icons #search-btn {
@@ -106,7 +107,7 @@ body {
     text-align: center;
     font-size: 18px;
     background: #fff;
-height: 100%;
+    height: 100%;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -218,6 +219,11 @@ h1 {
 }
 
 /* about us section */
+section {
+    width: 100%;
+
+}
+
 
 .about-us {
     background-color: rgb(241, 238, 238);
@@ -231,15 +237,13 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-     align-items: center;
+    align-items: center;
     text-align: center;
-     width: 100%; 
-    
+    width: 100%;
 }
 
 .aboutUs .img img {
     width: 70%;
-   
 }
 
 
@@ -261,60 +265,112 @@ h1 {
     text-align: center;
 }
 
-/* second swiper.js */
 
-html,
-body {
-  position: relative;
-  height: 100%;
+/* second slider styling */
+.secondSlider .slide {
+    border: 0.2rem solid #10221b;
 }
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
+.secondSlider .slide:hover .product .icon {
+    transform: translateY(0);
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
+.secondSlider .slide .product {
+    position: relative;
+    overflow: hidden;
+    height: 30rem;
+    width: 100%;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+.secondSlider .slide .product img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.secondSlider .slide .product .icon {
+    position: absolute;
+    width: 100%;
+    bottom: 2rem;
+    left: 0;
+    z-index: 10;
+    text-align: center;
+    transform: translateY(7rem);
 }
 
+.secondSlider .slide .product .icon a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.7rem;
+    background: #10221b;
+    color: white;
+    margin: 0 .2rem;
+
+}
+
+.secondSlider .slide .product .icon a:hover {
+    background: #219150;
+}
+
+
+.secondSlider .slide .content{
+
+  padding: 1rem 0;
+  text-align: center;  
+}
+
+.secondSlider .slide .content h3{
+    font-size: 2rem;
+    color:#10221b;
+}
+
+.secondSlider .slide .content .price{
+padding: 1rem 0;
+padding-top: 0.5rem;
+font-size: 2rem;
+color: #219150;
+}
+
+.secondSlider .slide .content .star i{
+    font-size: 1.7rem;
+    color: #10221b;
+}
 
 
 @media screen and (max-width:320px) {
     html {
         font-size: 50%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+    }
+
+    #myCarousel {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:220px) {
+    html {
+        font-size: 40%;
     }
 
     #menu-btn {
