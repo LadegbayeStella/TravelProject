@@ -10,6 +10,9 @@
     text-transform: capitalize;
 }
 
+a{
+    text-decoration: none;
+}
 html {
     font-size: 62.25%;
     scroll-behavior: smooth;
@@ -227,7 +230,7 @@ section {
 
 .about-us {
     background-color: rgb(241, 238, 238);
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     padding: 5rem;
     margin-top: 4rem;
@@ -314,31 +317,120 @@ section {
 }
 
 
-.secondSlider .slide .content{
+.secondSlider .slide .content {
 
-  padding: 1rem 10%;
-  text-align: center;  
+    padding: 1rem 10%;
+    text-align: center;
 }
 
-.secondSlider .slide .content h3{
+.secondSlider .slide .content h3 {
     font-size: 2rem;
-    color:#10221b;
-}
-
-.secondSlider .slide .content .price{
-padding: 1rem 0;
-padding-top: 0.5rem;
-font-size: 2rem;
-color: #219150;
-}
-
-.secondSlider .slide .content .star i{
-    font-size: 1.7rem;
     color: #10221b;
 }
 
+.secondSlider .slide .content .price {
+    padding: 1rem 0;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+    color: #219150;
+}
+
+.secondSlider .slide .content .star i {
+    font-size: 1.7rem;
+    color: #10221b;
+}
+ 
+
+/* popular packages section */
+.popular {
+    background: #eee;
+    margin-top: 8rem;
+}
+
+.boxes {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+   gap: 1.5rem;
+   justify-content: center;
+   margin-top: 6rem;
+}
 
 
+  .popular .boxes .imge:hover {
+     background: #10221b; 
+  }
+  
+  .popular .boxes .imge:hover .contents > * {
+    color: #fff;
+  }
+  
+  .popular .boxes .imge .img:hover .btn {
+    border-color: #fff;
+    margin-top: 2rem;
+  }
+  
+  .popular .boxes .imge:hover .btn:hover {
+    background: #fff;
+    color: #10221b;
+  }
+  
+
+.popular .boxes .imge {
+    text-align: center;
+    background: #fff;
+    width: 35rem;
+    height: 48rem;
+    border: 0.2rem solid #10221b;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+}
+
+.popular .boxes .imge .img {
+    height: 25rem;
+    overflow: hidden;
+    padding: 2rem;
+    padding-bottom: 0;
+    border-radius: .5rem;
+}
+
+.popular .boxes .imge .img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.boxes .imge {
+    text-align: center;
+}
+
+.boxes .imge .contents {
+    text-align: center;
+}
+
+.boxes .imge .contents h4{
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.boxes .imge .contents p {
+    line-height: 2;
+    font-family: sans-serif ;
+    text-align: center;
+}
+
+
+.boxes .imge .contents .price {
+    color: #219150;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+/* client section */
 
 /* popular packages section */
 
