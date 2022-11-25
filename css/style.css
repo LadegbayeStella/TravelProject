@@ -10,9 +10,10 @@
     text-transform: capitalize;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 html {
     font-size: 62.25%;
     scroll-behavior: smooth;
@@ -339,7 +340,7 @@ section {
     font-size: 1.7rem;
     color: #10221b;
 }
- 
+
 
 /* popular packages section */
 .popular {
@@ -348,34 +349,35 @@ section {
 }
 
 .boxes {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   text-align: center;
-   gap: 1.5rem;
-   justify-content: center;
-   margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.popular .boxes .imge:hover {
+    background: #10221b;
 }
 
 
-  .popular .boxes .imge:hover {
-     background: #10221b; 
-  }
-  
-  .popular .boxes .imge:hover .contents > * {
+.popular .boxes .imge:hover .contents>* {
     color: #fff;
-  }
-  
-  .popular .boxes .imge .img:hover .btn {
+}
+
+.popular .boxes .imge .img:hover .btn {
     border-color: #fff;
     margin-top: 2rem;
-  }
-  
-  .popular .boxes .imge:hover .btn:hover {
+}
+
+
+.popular .boxes .imge:hover .btn:hover {
     background: #fff;
     color: #10221b;
-  }
-  
+}
+
 
 .popular .boxes .imge {
     text-align: center;
@@ -411,7 +413,7 @@ section {
     text-align: center;
 }
 
-.boxes .imge .contents h4{
+.boxes .imge .contents h4 {
     margin-top: 1rem;
     font-weight: bolder;
     font-size: 2rem;
@@ -419,7 +421,7 @@ section {
 
 .boxes .imge .contents p {
     line-height: 2;
-    font-family: sans-serif ;
+    font-family: sans-serif;
     text-align: center;
 }
 
@@ -430,13 +432,197 @@ section {
     font-size: 2rem;
 }
 
+
+/* what we offer section */
+.whatWeOffer {
+    background-color: #fff;
+}
+
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+
+.whatWeOffer .boxes .imge:hover {
+    background: #10221b;
+
+}
+
+.whatWeOffer .boxes .imge:hover .contents>* {
+    color: #fff;
+}
+
+.whatWeOffer .boxes .imge .img:hover .btn {
+    border-color: #fff;
+    margin-top: 2rem;
+}
+
+.whatWeOffer .boxes .imge:hover h4:hover {
+    color: #219150;
+}
+
+.whatWeOffer .boxes .imge:hover .btn:hover {
+    background: #fff;
+    color: #10221b;
+}
+
+.whatWeOffer .boxes .imge:hover .btn {
+    margin-top: 4rem;
+}
+
+
+.whatWeOffer .boxes:hover img {
+    background: #fff;
+}
+
+.whatWeOffer .boxes .imge {
+    text-align: center;
+    background: #fff;
+    width: 35rem;
+    height: 40rem;
+    border: 0.2rem solid #10221b;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+}
+
+.boxes .imge .contents h4 {
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    color: #219150;
+}
+
+.whatWeOffer .boxes .imge {
+    height: 40rem;
+    overflow: hidden;
+    padding: 2rem;
+    padding-bottom: 0;
+    border-radius: .5rem;
+}
+
+
+.DailyPost {
+    background-color: #eee;
+
+}
+
+.daily-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+
+.image-post {
+    width: 30rem;
+}
+
+.image-post img {
+    width: 100%;
+    height: 80%;
+    border-radius: 1rem;
+}
+
+/* @media (max-width:320px) {
+    .daily-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+} */
+
+
+.daily-icon {
+    background-color: #10221b;
+}
+
+
+.DailyPost .daily-container .image-post .contents h4 {
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.daily-container .image-post .contents p {
+    line-height: 2;
+    font-family: sans-serif;
+    text-align: center;
+    color: red;
+}
+
 /* client section */
+
+.clients .slide .word {
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    background: #eee;
+    border-radius: .5rem;
+    color: #10221b;
+    line-height: 2;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 3rem;
+}
+
+.clients .slide .word::before {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: .7rem;
+    height: 3rem;
+    width: 3rem;
+    background: #eee;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.clients.slide .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.clients .slide .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.clients .slide .user h3 {
+    font-size: 2rem;
+    color: #10221b;
+}
+
+.clients .slide .user span {
+    color: #219150;
+    font-size: 1.5rem;
+}
+
+
+
+
 
 /* popular packages section */
 
 @media screen and (max-width:320px) {
     html {
-        font-size: 50%;
+        font-size: 62%;
     }
 
     #menu-btn {
@@ -461,6 +647,14 @@ section {
         /* flex-wrap: wrap; */
         justify-content: center;
         align-items: center;
+    }
+
+    .whatWeOffer .boxes .imge .btn {
+        margin-top: 3rem;
+    }
+
+    .whatWeOffer .boxes .imge {
+        height: 43rem;
     }
 }
 
