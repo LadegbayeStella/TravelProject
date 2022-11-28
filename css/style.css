@@ -146,8 +146,9 @@ main {
     margin-left: 4rem;
     width: 50rem;
 }
-.content p{
-width: 50rem;
+
+.content p {
+    width: 50rem;
 }
 
 .content span {
@@ -653,7 +654,7 @@ section {
 
 .clients .silde {
     text-align: center;
-    margin-top:4rem;
+    margin-top: 4rem;
 }
 
 .clients .silde img {
@@ -664,14 +665,14 @@ section {
 
 footer {
     height: 50rem;
-    background:url(../img/footer-bg.jpg);
+    background: url(../img/footer-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
-   filter: brightness(80%);
+    filter: brightness(80%);
 }
 
 footer .footer-div {
-margin-top: 4rem;
+    margin-top: 4rem;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
@@ -696,7 +697,7 @@ footer .footer-div .row li {
 
 footer .footer-div .row li a {
     font-size: 1.6rem;
-  color:ghostwhite;
+    color: ghostwhite;
     font-family: serif;
 }
 
@@ -726,63 +727,6 @@ footer .credit span {
     color: #219150;
     font-style: italic;
 }
-
-
-/* client section */
-
-/* .clients .slide .word {
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-style: italic;
-    background: #eee;
-    border-radius: .5rem;
-    color: #10221b;
-    line-height: 2;
-    position: relative;
-    z-index: 0;
-    margin-bottom: 3rem;
-}
-
-.clients .slide .word::before {
-    content: '';
-    position: absolute;
-    bottom: -1.5rem;
-    left: .7rem;
-    height: 3rem;
-    width: 3rem;
-    background: #eee;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.clients.slide .user {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.clients .slide .user img {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-}
-
-.clients .slide .user h3 {
-    font-size: 2rem;
-    color: #10221b;
-}
-
-.clients .slide .user span {
-    color: #219150;
-    font-size: 1.5rem;
-} */
-
-
-
 
 
 /* popular packages section */
@@ -824,113 +768,126 @@ footer .credit span {
     .whatWeOffer .boxes .imge {
         height: 43rem;
     }
-    .newsletter .content{
+
+    .newsletter .content {
         max-width: 40rem;
-    } 
+    }
 
     footer {
-        margin-top: 4rem; 
-       height: 350%;
-       
-   }
+        margin-top: 4rem;
+        height: 350%;
+
+    }
 
 }
 
 
-    @media screen and (max-width:441px) {
-        html {
-            font-size: 62%;
-        }
+@media screen and (max-width:441px) {
+    html {
+        font-size: 62%;
+    }
 
-        #menu-btn {
-            display: inline-block;
-        }
-
-
-
-
-        .myHeader .navbar {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: #16a085;
-            padding: 2rem 0;
-            transform: scaleY(0);
-            transform-origin: top;
-            text-align: center;
-        }
-
-        #myCarousel {
-            display: flex;
-            flex-direction: column;
-            /* flex-wrap: wrap; */
-            justify-content: center;
-            align-items: center;
-        }
-
-        .whatWeOffer .boxes .imge .btn {
-            margin-top: 3rem;
-        }
-
-        .whatWeOffer .boxes .imge {
-            height: 43rem;
-        }
+    #menu-btn {
+        display: inline-block;
     }
 
 
-    @media screen and (max-width:220px) {
-        html {
-            font-size: 40%;
-        }
-
-        #menu-btn {
-            display: inline-block;
-        }
-
-        .myHeader .navbar {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: #16a085;
-            padding: 2rem 0;
-            transform: scaleY(0);
-            transform-origin: top;
-            text-align: center;
-        }
-
+    .myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
     }
 
-
-
-
-
-
-    /* =======ben start here======== */
-
-    .newsletter {
+    #myCarousel {
         display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
         justify-content: center;
         align-items: center;
+    }
+
+    .whatWeOffer .boxes .imge .btn {
+        margin-top: 3rem;
+    }
+
+    .whatWeOffer .boxes .imge {
+        height: 43rem;
+    }
+
+
+    footer {
+        margin-top: 4rem;
+        height: 350%;
+
+    }
+
+}
+
+
+@media screen and (max-width:220px) {
+    html {
+        font-size: 40%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
         text-align: center;
-        flex-direction: column;
-        margin-top: 10rem;
-        /* width: 100%; */
     }
 
-    .email {
-        width: 200%;
-    }
-
-    @media (max-width:320px) {
-        .newsletter {
-            width: 120%;
-            background: none;
-            text-transform: none;
-            font-size: 1.6rem;
-            color: #10221b;
-            padding: 0 1.3rem;
-        }
+    footer {
+        margin-top: 4rem;
+        height: 350%;
 
     }
+
+}
+
+
+
+
+
+
+/* =======ben start here======== */
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10rem;
+    /* width: 100%; */
+}
+
+.email {
+    width: 200%;
+}
+
+@media (max-width:320px) {
+    .newsletter {
+        width: 120%;
+        background: none;
+        text-transform: none;
+        font-size: 1.6rem;
+        color: #10221b;
+        padding: 0 1.3rem;
+    }
+
+}
