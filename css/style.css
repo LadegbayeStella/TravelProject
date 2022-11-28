@@ -89,6 +89,7 @@ html,
 body {
     position: relative;
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -521,8 +522,9 @@ section {
     gap: 2.5rem;
     justify-content: center;
     margin-top: 6rem;
+    cursor: pointer;
+    overflow: scroll;
 }
-
 
 .image-post {
     width: 30rem;
@@ -534,22 +536,31 @@ section {
     border-radius: 1rem;
 }
 
-/* @media (max-width:320px) {
-    .daily-container{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-} */
-
 
 .daily-icon {
     background-color: #10221b;
+    height: 6%;
+    width: 25rem;
+    position: absolute;
+    margin-top: -2rem;
+    justify-content: center;
+    margin-left: 2rem;
+    border-radius: 1rem;
+}
+
+.daily-icon i {
+    color: #219150;
+    margin: 1rem;
+}
+
+.daily-icon a {
+    color: #fff;
+
 }
 
 
 .DailyPost .daily-container .image-post .contents h4 {
-    margin-top: 1rem;
+    margin-top: 5rem;
     font-weight: bolder;
     font-size: 2rem;
 }
@@ -558,12 +569,98 @@ section {
     line-height: 2;
     font-family: sans-serif;
     text-align: center;
-    color: red;
+}
+
+
+
+
+.subscribe {
+    /* margin: 2rem; */
+}
+
+.subscribe h1 {
+    margin: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.subscribe .contents p {
+    line-height: 2;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1.9rem;
+    /* margin: 2rem; */
+
+}
+
+
+.newsletter {
+    background: #eee;
+}
+
+.newsletter .news {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+
+}
+
+.newsletter .news p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #10221b;
+}
+
+.newsletter .news form {
+    margin-top: 3rem;
+    background: #fff;
+    border-radius: 5rem;
+    border: 0.2rem solid #10221b;
+    padding: .7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter .news form .email {
+    width: 200%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: #10221b;
+    padding: 0 1.3rem;
+}
+
+.newsletter .news form .btn {
+    margin-top: 0;
+    border-radius: 5rem;
+    background: #10221b;
+    color: #fff;
+}
+
+.newsletter .news form .btn:hover {
+    background: none;
+    color: #10221b;
+}
+
+
+
+
+.clients .silde {
+    text-align: center;
+    margin-top:4rem;
+}
+
+.clients .silde img {
+    height: 12rem;
+    width: 12rem;
 }
 
 /* client section */
 
-.clients .slide .word {
+/* .clients .slide .word {
     padding: 2rem;
     font-size: 1.5rem;
     font-style: italic;
@@ -612,7 +709,7 @@ section {
 .clients .slide .user span {
     color: #219150;
     font-size: 1.5rem;
-}
+} */
 
 
 
@@ -622,8 +719,9 @@ section {
 
 @media screen and (max-width:320px) {
     html {
-        font-size: 62%;
+        font-size: 62.25%;
     }
+
 
     #menu-btn {
         display: inline-block;
@@ -656,27 +754,107 @@ section {
     .whatWeOffer .boxes .imge {
         height: 43rem;
     }
-}
+    .newsletter .content{
+        max-width: 40rem;
+    } 
 
-@media screen and (max-width:220px) {
-    html {
-        font-size: 40%;
     }
 
-    #menu-btn {
-        display: inline-block;
+
+    @media screen and (max-width:441px) {
+        html {
+            font-size: 62%;
+        }
+
+        #menu-btn {
+            display: inline-block;
+        }
+
+
+
+
+        .myHeader .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #16a085;
+            padding: 2rem 0;
+            transform: scaleY(0);
+            transform-origin: top;
+            text-align: center;
+        }
+
+        #myCarousel {
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .whatWeOffer .boxes .imge .btn {
+            margin-top: 3rem;
+        }
+
+        .whatWeOffer .boxes .imge {
+            height: 43rem;
+        }
     }
 
-    .myHeader .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #16a085;
-        padding: 2rem 0;
-        transform: scaleY(0);
-        transform-origin: top;
+
+    @media screen and (max-width:220px) {
+        html {
+            font-size: 40%;
+        }
+
+        #menu-btn {
+            display: inline-block;
+        }
+
+        .myHeader .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #16a085;
+            padding: 2rem 0;
+            transform: scaleY(0);
+            transform-origin: top;
+            text-align: center;
+        }
+
+    }
+
+
+
+
+
+
+    /* =======ben start here======== */
+
+    .newsletter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        flex-direction: column;
+        margin-top: 10rem;
+        /* width: 100%; */
     }
 
-}
+    .email {
+        width: 200%;
+    }
+
+    @media (max-width:320px) {
+        .newsletter {
+            width: 120%;
+            background: none;
+            text-transform: none;
+            font-size: 1.6rem;
+            color: #10221b;
+            padding: 0 1.3rem;
+        }
+
+    }
