@@ -15,12 +15,18 @@ a {
 }
 
 html {
-    font-size: 62.25%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
     overflow-x: hidden;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 header {
     display: flex;
@@ -135,6 +141,13 @@ body {
     object-fit: cover;
 }
 
+.swiper-button-next{
+    color: #219150;
+}
+
+.swiper-button-prev{
+    color: #16a085;
+}
 
 main {
     position: relative;
@@ -854,7 +867,6 @@ footer .credit span {
     footer {
         margin-top: 4rem;
         height: 350%;
-
     }
 
 }
