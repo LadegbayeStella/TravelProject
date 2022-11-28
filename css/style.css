@@ -21,8 +21,6 @@ html {
     overflow-x: hidden;
 }
 
-
-
 header {
     display: flex;
     flex-wrap: wrap;
@@ -866,35 +864,3 @@ footer .credit span {
 
 }
 
-
-
-
-
-
-/* =======ben start here======== */
-
-.newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin-top: 10rem;
-    /* width: 100%; */
-}
-
-.email {
-    width: 200%;
-}
-
-@media (max-width:320px) {
-    .newsletter {
-        width: 120%;
-        background: none;
-        text-transform: none;
-        font-size: 1.6rem;
-        color: #10221b;
-        padding: 0 1.3rem;
-    }
-
-}
