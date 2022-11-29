@@ -15,7 +15,7 @@ a {
 }
 
 
-#color{
+#color {
     color: #219150;
 }
 
@@ -139,11 +139,11 @@ body {
     object-fit: cover;
 }
 
-.swiper-button-next{
+.swiper-button-next {
     color: #219150;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
     color: #16a085;
 }
 
@@ -247,7 +247,7 @@ section {
 
 .about-us {
     background-color: rgb(241, 238, 238);
-    /* width: 100%; */
+    width: 100%;
     position: relative;
     padding: 5rem;
     margin-top: 4rem;
@@ -263,7 +263,7 @@ section {
 }
 
 .aboutUs .img img {
-    width: 70%;
+    width: 75%;
 }
 
 
@@ -587,8 +587,6 @@ section {
 }
 
 
-
-
 .subscribe {
     margin: 2rem;
 }
@@ -605,7 +603,6 @@ section {
     text-align: center;
     font-size: 1.9rem;
     /* margin: 2rem; */
-
 }
 
 
@@ -675,7 +672,7 @@ section {
 
 
 footer {
-    height: 50rem;
+    height: 100%;
     background: url(../img/footer-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -684,12 +681,12 @@ footer {
 
 footer .footer-div {
     margin-top: 4rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 footer .footer-div .row {
@@ -744,7 +741,7 @@ footer .credit span {
 
 @media screen and (max-width:320px) {
     html {
-        font-size: 62.25%;
+        font-size: 62.5%;
     }
 
 
@@ -752,9 +749,21 @@ footer .credit span {
         display: inline-block;
     }
 
+
+    body {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    header{
+        width: 90%;
+    }
+
     .myHeader .navbar {
         position: absolute;
-        top: 100%;
+        top: 80%;
         left: 0;
         right: 0;
         background: #16a085;
@@ -762,6 +771,7 @@ footer .credit span {
         transform: scaleY(0);
         transform-origin: top;
         text-align: center;
+        width: 100%;
     }
 
     #myCarousel {
@@ -772,6 +782,21 @@ footer .credit span {
         align-items: center;
     }
 
+
+    .aboutUs .img img {
+        width: 100%;
+    }
+
+    .contenx p {
+        font-family:  sans-serif;
+        font-size: 1.5rem;
+        color: #10221b;
+        padding: 1rem 0;
+        line-height: 2;
+        width: 100%;
+        /* text-align: center; */
+    }
+    
     .whatWeOffer .boxes .imge .btn {
         margin-top: 3rem;
     }
@@ -789,11 +814,79 @@ footer .credit span {
         height: 120rem;
     }
 
+    #color {
+        display: none;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        gap: 1rem;
+    }
+
+    footer .credit {
+        color: black;
+    }
+}
+
+
+
+@media screen and (max-width:441px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    body {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+        width: 100%;
+    }
+
+    #myCarousel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatWeOffer .boxes .imge .btn {
+        margin-top: 3rem;
+    }
+
+    .whatWeOffer .boxes .imge {
+        height: 43rem;
+    }
+
+
+    footer {
+        margin-top: 4rem;
+        height: 120rem;
+    }
+
 
 }
 
 
-@media screen and (max-width:441px) {
+@media screen and (max-width:768px) {
     html {
         font-size: 62%;
     }
@@ -840,7 +933,6 @@ footer .credit span {
 
 }
 
-
 @media screen and (max-width:220px) {
     html {
         font-size: 40%;
@@ -868,4 +960,3 @@ footer .credit span {
     }
 
 }
-
