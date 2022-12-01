@@ -815,7 +815,7 @@ footer .credit span {
     }
 
     #color {
-        display: none;
+        /* display: none; */
     }
 
     footer {
