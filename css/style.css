@@ -14,13 +14,17 @@ a {
     text-decoration: none;
 }
 
+
+#color {
+    color: #219150;
+}
+
 html {
-    font-size: 62.25%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
     overflow-x: hidden;
 }
-
 
 header {
     display: flex;
@@ -135,10 +139,16 @@ body {
     object-fit: cover;
 }
 
+.swiper-button-next {
+    color: #219150;
+}
+
+.swiper-button-prev {
+    color: #16a085;
+}
 
 main {
     position: relative;
-    /* padding: 5rem 9%; */
 }
 
 .content {
@@ -146,8 +156,9 @@ main {
     margin-left: 4rem;
     width: 50rem;
 }
-.content p{
-width: 50rem;
+
+.content p {
+    width: 50rem;
 }
 
 .content span {
@@ -228,14 +239,12 @@ h1 {
 
 /* about us section */
 section {
-    width: 100%;
-
+   width: 100%;
 }
-
 
 .about-us {
     background-color: rgb(241, 238, 238);
-    /* width: 100%; */
+    width: 100%;
     position: relative;
     padding: 5rem;
     margin-top: 4rem;
@@ -251,9 +260,8 @@ section {
 }
 
 .aboutUs .img img {
-    width: 70%;
+    width: 75%;
 }
-
 
 .contenx h5 {
     color: #219150;
@@ -272,7 +280,6 @@ section {
     width: 400px;
     text-align: center;
 }
-
 
 /* second slider styling */
 .secondSlider .slide {
@@ -314,13 +321,11 @@ section {
     background: #10221b;
     color: white;
     margin: 0 .2rem;
-
 }
 
 .secondSlider .slide .product .icon a:hover {
     background: #219150;
 }
-
 
 .secondSlider .slide .content {
 
@@ -344,7 +349,6 @@ section {
     font-size: 1.7rem;
     color: #10221b;
 }
-
 
 /* popular packages section */
 .popular {
@@ -381,7 +385,6 @@ section {
     background: #fff;
     color: #10221b;
 }
-
 
 .popular .boxes .imge {
     text-align: center;
@@ -429,19 +432,16 @@ section {
     text-align: center;
 }
 
-
 .boxes .imge .contents .price {
     color: #219150;
     font-weight: bolder;
     font-size: 2rem;
 }
 
-
 /* what we offer section */
 .whatWeOffer {
     background-color: #fff;
 }
-
 
 .boxes {
     display: flex;
@@ -452,7 +452,6 @@ section {
     justify-content: center;
     margin-top: 6rem;
 }
-
 
 .whatWeOffer .boxes .imge:hover {
     background: #10221b;
@@ -514,7 +513,6 @@ section {
 
 .DailyPost {
     background-color: #eee;
-
 }
 
 .daily-container {
@@ -539,7 +537,6 @@ section {
     border-radius: 1rem;
 }
 
-
 .daily-icon {
     background-color: #10221b;
     height: 6%;
@@ -561,7 +558,6 @@ section {
 
 }
 
-
 .DailyPost .daily-container .image-post .contents h4 {
     margin-top: 5rem;
     font-weight: bolder;
@@ -573,9 +569,6 @@ section {
     font-family: sans-serif;
     text-align: center;
 }
-
-
-
 
 .subscribe {
     margin: 2rem;
@@ -593,7 +586,6 @@ section {
     text-align: center;
     font-size: 1.9rem;
     /* margin: 2rem; */
-
 }
 
 
@@ -605,7 +597,6 @@ section {
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
-
 }
 
 .newsletter .news p {
@@ -648,12 +639,9 @@ section {
     color: #10221b;
 }
 
-
-
-
 .clients .silde {
     text-align: center;
-    margin-top:4rem;
+    margin-top: 4rem;
 }
 
 .clients .silde img {
@@ -661,23 +649,22 @@ section {
     width: 12rem;
 }
 
-
 footer {
-    height: 50rem;
-    background:url(../img/footer-bg.jpg);
+    height: 100%;
+    background: url(../img/footer-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
-   filter: brightness(80%);
+    filter: brightness(80%);
 }
 
 footer .footer-div {
-margin-top: 4rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin-top: 4rem;
     gap: 1.5rem;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 footer .footer-div .row {
@@ -696,7 +683,7 @@ footer .footer-div .row li {
 
 footer .footer-div .row li a {
     font-size: 1.6rem;
-  color:ghostwhite;
+    color: ghostwhite;
     font-family: serif;
 }
 
@@ -727,71 +714,187 @@ footer .credit span {
     font-style: italic;
 }
 
-
-/* client section */
-
-/* .clients .slide .word {
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-style: italic;
-    background: #eee;
-    border-radius: .5rem;
-    color: #10221b;
-    line-height: 2;
-    position: relative;
-    z-index: 0;
-    margin-bottom: 3rem;
-}
-
-.clients .slide .word::before {
-    content: '';
-    position: absolute;
-    bottom: -1.5rem;
-    left: .7rem;
-    height: 3rem;
-    width: 3rem;
-    background: #eee;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.clients.slide .user {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.clients .slide .user img {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-}
-
-.clients .slide .user h3 {
-    font-size: 2rem;
-    color: #10221b;
-}
-
-.clients .slide .user span {
-    color: #219150;
-    font-size: 1.5rem;
-} */
-
-
-
-
-
 /* popular packages section */
 
 @media screen and (max-width:320px) {
     html {
-        font-size: 62.25%;
+        font-size: 62.5%;
     }
 
+    #menu-btn {
+        display: inline-block;
+    }
+    
+    .fa-times {
+        transform: rotate(180deg);
+    }
+    
+    .myHeader .navbar.active {
+        transform: scaleY(1);
+    }
+    
+    .myHeader .navbar a {
+        display: block;
+        background: var(--White);
+        border-radius: .5rem;
+        color: ghostwhite;
+        margin: 1.5rem;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+
+    body {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    header{
+        width: 90%;
+    }
+
+    .myHeader .navbar {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+        width: 100%;
+    }
+
+    #myCarousel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content p {
+        /* width:40rem; */
+        line-height: 2;
+        margin: 4rem;
+        text-align: center;
+    }
+    
+    .aboutUs .img img {
+        width: 100%;
+    }
+
+    .contenx p {
+        font-family:  sans-serif;
+        font-size: 1.5rem;
+        color: #10221b;
+        padding: 1rem 0;
+        line-height: 2;
+        width: 100%;
+        /* text-align: center; */
+    }
+    
+    .whatWeOffer .boxes .imge .btn {
+        margin-top: 3rem;
+    }
+
+    .whatWeOffer .boxes .imge {
+        height: 43rem;
+    }
+
+    .newsletter .content {
+        max-width: 40rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+        height: 220rem;
+    }
+
+    #color {
+        /* display: none; */
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        gap: 1rem;
+    }
+
+    footer .credit {
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:441px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    body {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #color {
+        display: none;
+    }
+    
+    .myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+        width: 100%;
+    }
+
+    #myCarousel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatWeOffer .boxes .imge .btn {
+        margin-top: 3rem;
+    }
+
+    .whatWeOffer .boxes .imge {
+        height: 43rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+        height: 120rem;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 62%;
+    }
 
     #menu-btn {
         display: inline-block;
@@ -824,113 +927,39 @@ footer .credit span {
     .whatWeOffer .boxes .imge {
         height: 43rem;
     }
-    .newsletter .content{
-        max-width: 40rem;
-    } 
+
 
     footer {
-        margin-top: 4rem; 
-       height: 350%;
-       
-   }
+        margin-top: 4rem;
+        height: 120rem;
+    }
 
 }
 
-
-    @media screen and (max-width:441px) {
-        html {
-            font-size: 62%;
-        }
-
-        #menu-btn {
-            display: inline-block;
-        }
-
-
-
-
-        .myHeader .navbar {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: #16a085;
-            padding: 2rem 0;
-            transform: scaleY(0);
-            transform-origin: top;
-            text-align: center;
-        }
-
-        #myCarousel {
-            display: flex;
-            flex-direction: column;
-            /* flex-wrap: wrap; */
-            justify-content: center;
-            align-items: center;
-        }
-
-        .whatWeOffer .boxes .imge .btn {
-            margin-top: 3rem;
-        }
-
-        .whatWeOffer .boxes .imge {
-            height: 43rem;
-        }
+@media screen and (max-width:220px) {
+    html {
+        font-size: 40%;
     }
 
-
-    @media screen and (max-width:220px) {
-        html {
-            font-size: 40%;
-        }
-
-        #menu-btn {
-            display: inline-block;
-        }
-
-        .myHeader .navbar {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: #16a085;
-            padding: 2rem 0;
-            transform: scaleY(0);
-            transform-origin: top;
-            text-align: center;
-        }
-
+    #menu-btn {
+        display: inline-block;
     }
 
-
-
-
-
-
-    /* =======ben start here======== */
-
-    .newsletter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .myHeader .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
         text-align: center;
-        flex-direction: column;
-        margin-top: 10rem;
-        /* width: 100%; */
     }
 
-    .email {
-        width: 200%;
+    footer {
+        margin-top: 4rem;
+        height: 120rem;
     }
 
-    @media (max-width:320px) {
-        .newsletter {
-            width: 120%;
-            background: none;
-            text-transform: none;
-            font-size: 1.6rem;
-            color: #10221b;
-            padding: 0 1.3rem;
-        }
-
-    }
+}

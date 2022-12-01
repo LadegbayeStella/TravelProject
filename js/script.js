@@ -93,3 +93,16 @@ var swiper = new Swiper(".clients-slider", {
       },
   },
 });
+
+let fikayo = document.querySelector("#menu-btn");
+let myBoss = document.querySelector(".navbar");
+
+fikayo.onclick = () => {
+    fikayo.classList.toggle("fa-times");
+    myBoss.classList.toggle("active");
+}
+
+window.onscroll =()=> {
+    fikayo.classList.remove("fa-times");
+    myBoss.classList.remove("active");
+}
