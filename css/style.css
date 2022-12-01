@@ -724,6 +724,25 @@ footer .credit span {
     #menu-btn {
         display: inline-block;
     }
+    
+    .fa-times {
+        transform: rotate(180deg);
+    }
+    
+    .myHeader .navbar.active {
+        transform: scaleY(1);
+    }
+    
+    .myHeader .navbar a {
+        display: block;
+        background: var(--White);
+        border-radius: .5rem;
+        color: ghostwhite;
+        margin: 1.5rem;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
 
     body {
         width: 100%;
@@ -809,6 +828,10 @@ footer .credit span {
         color: black;
     }
 }
+
+
+
+
 
 
 
