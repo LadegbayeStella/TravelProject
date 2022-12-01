@@ -149,7 +149,6 @@ body {
 
 main {
     position: relative;
-    /* padding: 5rem 9%; */
 }
 
 .content {
@@ -240,10 +239,8 @@ h1 {
 
 /* about us section */
 section {
-    width: 100%;
-
+   width: 100%;
 }
-
 
 .about-us {
     background-color: rgb(241, 238, 238);
@@ -266,7 +263,6 @@ section {
     width: 75%;
 }
 
-
 .contenx h5 {
     color: #219150;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -284,7 +280,6 @@ section {
     width: 400px;
     text-align: center;
 }
-
 
 /* second slider styling */
 .secondSlider .slide {
@@ -326,13 +321,11 @@ section {
     background: #10221b;
     color: white;
     margin: 0 .2rem;
-
 }
 
 .secondSlider .slide .product .icon a:hover {
     background: #219150;
 }
-
 
 .secondSlider .slide .content {
 
@@ -356,7 +349,6 @@ section {
     font-size: 1.7rem;
     color: #10221b;
 }
-
 
 /* popular packages section */
 .popular {
@@ -393,7 +385,6 @@ section {
     background: #fff;
     color: #10221b;
 }
-
 
 .popular .boxes .imge {
     text-align: center;
@@ -441,19 +432,16 @@ section {
     text-align: center;
 }
 
-
 .boxes .imge .contents .price {
     color: #219150;
     font-weight: bolder;
     font-size: 2rem;
 }
 
-
 /* what we offer section */
 .whatWeOffer {
     background-color: #fff;
 }
-
 
 .boxes {
     display: flex;
@@ -464,7 +452,6 @@ section {
     justify-content: center;
     margin-top: 6rem;
 }
-
 
 .whatWeOffer .boxes .imge:hover {
     background: #10221b;
@@ -526,7 +513,6 @@ section {
 
 .DailyPost {
     background-color: #eee;
-
 }
 
 .daily-container {
@@ -551,7 +537,6 @@ section {
     border-radius: 1rem;
 }
 
-
 .daily-icon {
     background-color: #10221b;
     height: 6%;
@@ -573,7 +558,6 @@ section {
 
 }
 
-
 .DailyPost .daily-container .image-post .contents h4 {
     margin-top: 5rem;
     font-weight: bolder;
@@ -585,7 +569,6 @@ section {
     font-family: sans-serif;
     text-align: center;
 }
-
 
 .subscribe {
     margin: 2rem;
@@ -614,7 +597,6 @@ section {
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
-
 }
 
 .newsletter .news p {
@@ -657,9 +639,6 @@ section {
     color: #10221b;
 }
 
-
-
-
 .clients .silde {
     text-align: center;
     margin-top: 4rem;
@@ -669,7 +648,6 @@ section {
     height: 12rem;
     width: 12rem;
 }
-
 
 footer {
     height: 100%;
@@ -736,7 +714,6 @@ footer .credit span {
     font-style: italic;
 }
 
-
 /* popular packages section */
 
 @media screen and (max-width:320px) {
@@ -744,11 +721,9 @@ footer .credit span {
         font-size: 62.5%;
     }
 
-
     #menu-btn {
         display: inline-block;
     }
-
 
     body {
         width: 100%;
@@ -777,12 +752,18 @@ footer .credit span {
     #myCarousel {
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
-
+    .content p {
+        /* width:40rem; */
+        line-height: 2;
+        margin: 4rem;
+        text-align: center;
+    }
+    
     .aboutUs .img img {
         width: 100%;
     }
@@ -844,7 +825,6 @@ footer .credit span {
         width: 100%;
         justify-content: center;
         align-items: center;
-
     }
 
     .myHeader .navbar {
@@ -876,12 +856,10 @@ footer .credit span {
         height: 43rem;
     }
 
-
     footer {
         margin-top: 4rem;
         height: 120rem;
     }
-
 
 }
 
@@ -894,7 +872,6 @@ footer .credit span {
     #menu-btn {
         display: inline-block;
     }
-
 
     .myHeader .navbar {
         position: absolute;
@@ -929,7 +906,6 @@ footer .credit span {
         margin-top: 4rem;
         height: 120rem;
     }
-
 
 }
 
