@@ -850,6 +850,10 @@ footer .credit span {
         align-items: center;
     }
 
+    #color {
+        display: none;
+    }
+    
     .myHeader .navbar {
         position: absolute;
         top: 100%;
