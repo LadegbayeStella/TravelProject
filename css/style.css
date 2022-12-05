@@ -108,13 +108,18 @@ body {
 }
 
 .swiper {
-    width: 110%;
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     background: #fff;
     height: 100%;
     width: 100%;
@@ -136,7 +141,7 @@ body {
 .swiper-slide img {
     display: block;
     width: 100%;
-    height: 80rem;
+    height: 70rem;
     object-fit: cover;
 }
 
@@ -154,12 +159,13 @@ main {
 
 .content {
     position: absolute;
-    margin-left: 4rem;
+    /* margin-left: 1rem; */
     width: 50rem;
+    text-align: center;
 }
 
 .content p {
-    width: 50rem;
+    width: 60rem;
 }
 
 .content span {
@@ -170,9 +176,11 @@ main {
 .content h3 {
     font-size: 6rem;
     color: #219150;
-    padding-top: .5rem;
+    padding-top: 2  9%;
     text-transform: uppercase;
     margin: 2rem;
+ 
+    gap: 4rem;
 }
 
 
@@ -717,6 +725,133 @@ footer .credit span {
 
 /* popular packages section */
 
+@media screen and (max-width:320px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+    
+    .fa-times {
+        transform: rotate(180deg);
+    }
+    
+    .myHeader .navbar.active {
+        transform: scaleY(1);
+    }
+    
+    .content h3 {
+        font-size: 5rem;
+        color: #219150;
+        padding-top: 2  9%;
+        text-transform: uppercase;
+        margin: 2rem;
+     
+        gap: 4rem;
+    }
+
+    .myHeader .navbar a {
+        display: block;
+        background: var(--White);
+        border-radius: .5rem;
+        color: ghostwhite;
+        margin: 1.5rem;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+
+    body {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    header{
+        width: 90%;
+    }
+
+    .myHeader .navbar {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        background: #16a085;
+        padding: 2rem 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        text-align: center;
+        width: 100%;
+    }
+
+    #myCarousel {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content p {
+        /* width:40rem; */
+        line-height: 2;
+        margin: 4rem;
+        text-align: center;
+    }
+    
+    .aboutUs .img img {
+        width: 100%;
+    }
+
+    .contenx p {
+        font-family:  sans-serif;
+        font-size: 1.5rem;
+        color: #10221b;
+        padding: 1rem 0;
+        line-height: 2;
+        width: 100%;
+        /* text-align: center; */
+    }
+    
+    .whatWeOffer .boxes .imge .btn {
+        margin-top: 3rem;
+    }
+
+    .whatWeOffer .boxes .imge {
+        height: 43rem;
+    }
+
+    .newsletter .content {
+        max-width: 40rem;
+    }
+
+    footer {
+        margin-top: 4rem;
+        height: 230rem;
+    }
+
+    #color {
+        /* display: none; */
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 2, 1fr;
+        gap: 1rem;
+    }
+
+    footer .credit {
+        color: black;
+    }
+}
+
+
+
+
+
 @media screen and (max-width:447px) {
     html {
         font-size: 62.5%;
@@ -734,6 +869,16 @@ footer .credit span {
         transform: scaleY(1);
     }
     
+    .content h3 {
+        font-size: 5rem;
+        color: #219150;
+        padding-top: 2  9%;
+        text-transform: uppercase;
+        margin: 2rem;
+     
+        gap: 4rem;
+    }
+
     .myHeader .navbar a {
         display: block;
         background: var(--White);
@@ -868,6 +1013,17 @@ footer .credit span {
         width: 100%;
     }
 
+
+    .content h3 {
+        font-size: 5rem;
+        color: #219150;
+        padding-top: 2  9%;
+        text-transform: uppercase;
+        margin: 2rem;
+     
+        gap: 4rem;
+    }
+
     #myCarousel {
         display: flex;
         flex-direction: column;
@@ -921,6 +1077,17 @@ footer .credit span {
         align-items: center;
     }
 
+
+    .content h3 {
+        font-size: 5rem;
+        color: #219150;
+        padding-top: 2  9%;
+        text-transform: uppercase;
+        margin: 2rem;
+     
+        gap: 4rem;
+    }
+
     .whatWeOffer .boxes .imge .btn {
         margin-top: 3rem;
     }
@@ -963,4 +1130,13 @@ footer .credit span {
         height: 120rem;
     }
 
+    .content h3 {
+        font-size: 5rem;
+        color: #219150;
+        padding-top: 2  9%;
+        text-transform: uppercase;
+        margin: 2rem;
+     
+        gap: 4rem;
+    }
 }
