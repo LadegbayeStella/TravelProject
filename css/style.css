@@ -108,7 +108,7 @@ body {
 }
 
 .swiper {
-    width: 100%;
+    width: 110%;
     height: 100%;
 }
 
@@ -117,6 +117,7 @@ body {
     font-size: 18px;
     background: #fff;
     height: 100%;
+    width: 100%;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
