@@ -772,7 +772,7 @@ footer .credit span {
     }
 
     header{
-        width: 90%;
+        width: 100%;
     }
 
     .myHeader .navbar {
@@ -899,7 +899,7 @@ footer .credit span {
     }
 
     header{
-        width: 90%;
+        width: 100%;
     }
 
     .myHeader .navbar {
@@ -961,9 +961,7 @@ footer .credit span {
         height: 230rem;
     }
 
-    #color {
-        /* display: none; */
-    }
+   
 
     footer {
         display: grid;
